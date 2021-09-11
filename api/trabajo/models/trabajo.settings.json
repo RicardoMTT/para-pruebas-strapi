@@ -27,6 +27,9 @@
     "empresa": {
       "via": "trabajo",
       "model": "empresas"
+    },
+    "tipo": {
+      "type": "string"
     }
   }
 }
