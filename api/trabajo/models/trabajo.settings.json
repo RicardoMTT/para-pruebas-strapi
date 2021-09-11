@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trabajos",
+  "info": {
+    "name": "trabajo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "sueldo": {
+      "type": "decimal"
+    },
+    "ciudad": {
+      "type": "string"
+    },
+    "empresa": {
+      "via": "trabajo",
+      "model": "empresas"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "zapatillas",
+  "info": {
+    "name": "zapatillas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "precio": {
+      "type": "decimal"
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "stock": {
+      "type": "integer"
+    }
+  }
+}

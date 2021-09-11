@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "empresas",
+  "info": {
+    "name": "empresas",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "ciudad": {
+      "type": "string"
+    },
+    "fundacion": {
+      "type": "integer"
+    },
+    "trabajo": {
+      "via": "empresa",
+      "model": "trabajo"
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

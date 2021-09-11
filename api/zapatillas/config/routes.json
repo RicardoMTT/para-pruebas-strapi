@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/zapatillas",
+      "handler": "zapatillas.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/zapatillas/count",
+      "handler": "zapatillas.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/zapatillas/:id",
+      "handler": "zapatillas.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/zapatillas",
+      "handler": "zapatillas.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/zapatillas/:id",
+      "handler": "zapatillas.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/zapatillas/:id",
+      "handler": "zapatillas.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
