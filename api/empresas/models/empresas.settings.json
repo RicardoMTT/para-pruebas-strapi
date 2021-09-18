@@ -21,10 +21,6 @@
     "fundacion": {
       "type": "integer"
     },
-    "trabajo": {
-      "via": "empresa",
-      "model": "trabajo"
-    },
     "avatar": {
       "model": "file",
       "via": "related",
@@ -39,6 +35,10 @@
     },
     "correo": {
       "type": "string"
+    },
+    "trabajos": {
+      "via": "empresa",
+      "collection": "trabajo"
     }
   }
 }

@@ -2,6 +2,14 @@
   "routes": [
     {
       "method": "GET",
+      "path": "/trabajos/:query/:type/:full",
+      "handler": "trabajo.getTrabajosFiltrado",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/trabajos",
       "handler": "trabajo.find",
       "config": {
